@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="../JS/worker.js">
+    </script>
+
+    <script>
+        document.getElementById("GetStats").addEventListener("click", grabstats)
+        document.getElementById("SwitchON").addEventListener("click", switch_on)
+        document.getElementById("SwitchOFF").addEventListener("click", switch_off)
+    </script>
+</head>
+
+<body>
+    <h1>Imaginary IoT :)</h1>
+    <br/>
+    <h3 id="stats"></h3>
+
+    <button id="GetStats">Get Status</button>
+
+    <button id="SwitchON">
+        Switch On
+    </button>
+    <button id="SwitchOFF">
+        Switch Off
+    </button>
+</body>
+
+</html>
