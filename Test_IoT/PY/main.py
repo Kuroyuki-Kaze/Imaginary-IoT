@@ -1,3 +1,5 @@
+#!/usr/bin/python3.9
+
 from flask.helpers import make_response
 from flask import Flask, request, redirect
 from flask_cors import CORS
