@@ -34,7 +34,7 @@ def change_status():
 
     if request.method == "POST":
         json_data = request.json
-        temp_action = json_data['action']
+        temp_action = json_data['action'] if json_data else "no"
         if temp_action == "on":
             state_on = True
             return "200 OK"
